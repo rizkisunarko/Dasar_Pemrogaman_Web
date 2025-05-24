@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-181_Rizki Pratama Sunarko_TP3</title>
+</head>
+
+<body bgcolor="red">
+    <fieldset>
+        <form action="" align="">
+            <h2 align="center">
+                <font face="Arial">STUDENT DATA</font>
+            </h2>
+
+            <!-- tabel 1 -->
+            <table width="100%" cellspacing="0" cellpadding="5">
+                <tr bgcolor="aqua">
+                    <th align="left" colspan="4">
+                        <font face="arial">SOFTWARE SKILL</font>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="22%" valign="top" rowspan="2">
+                        <font face="arial">Office Software</font>
+                    </td>
+                    <td width="25%"><input type="checkbox" id="msword"><label for="msword">
+                            <font face="arial">Microsoft Word</font>
+                        </label></td>
+                    <td width="25%"><input type="checkbox" id="msacces"><label for="msacces">
+                            <font face="arial">Microsoft Access</font>
+                        </label></td>
+                    <td width="25%"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="msexcel"><label for="msexcel" id=msexcel>
+                            <font face="arial">Microsoft Excel</font>
+                        </label></td>
+                    <td><input type="checkbox" id="other"><label for="other">
+                            <font face="arial">Other</font>
+                        </label></td>
+                </tr>
+            </table>
+            <br>
+
+            <table width="100%" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td width="22%" valign="top" rowspan="2">
+                        <font face="arial">Operating System</font>
+                    </td>
+                    <td width="25%"><input type="checkbox" id="windows"><label for="windows">
+                            <font face="arial">Windows</font>
+                        </label></td>
+                    <td width="25%"><input type="checkbox" id="macos"><label for="macos">
+                            <font face="arial">macOS</font>
+                        </label></td>
+                    <td width="25%"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="linux"><label for="linux" id=linux>
+                            <font face="arial">Linux</font>
+                        </label></td>
+                    <td><input type="checkbox" id="other"><label for="other">
+                            <font face="arial">Other</font>
+                        </label></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <table width="100%" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td width="22%" valign="top" rowspan="2">
+                        <font face="arial">Programing Language</font>
+                    </td>
+                    <td width="25%"><input type="checkbox" id="python"><label for="python">
+                            <font face="arial">Python</font>
+                        </label></td>
+                    <td width="25%"><input type="checkbox" id="c++"><label for="c++">
+                            <font face="arial">C++</font>
+                        </label></td>
+                    <td width="25%"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="java"><label for="java" id="java">
+                            <font face="arial">Java</font>
+                        </label></td>
+                    <td><input type="checkbox" id="other"><label for="other">
+                            <font face="arial">Other</font>
+                        </label></td>
+                </tr>
+            </table>
+            <br>
+
+            <table width="100%" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td width="25%"><label for="nama">
+                            <font face="arial">Name</font>
+                        </label></td>
+                    <td width="25%"><input type="text" name="fisrtname" size="40" title="Masukan Nama Depan" required
+                            title="Masukan Nama Depan Anda"></td>
+                    <td width="25%"><input type="text" name="middlename" size="40" required
+                            title="Masukan Nama Tengah Anda"></td>
+                    <td width="25%"><input type="text" name="lastname" size="40" required
+                            title="Masukan Nama Belakang Anda"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><label for="fisrtname">
+                            <font face="arial" size="1">First Name</font>
+                        </label></td>
+                    <td><label for="middlename">
+                            <font face="arial" size="1">Middle Name</font>
+                        </label></td>
+                    <td><label for="lastname">
+                            <font face="arial" size="1">Last Name</font>
+                        </label></td>
+                </tr>
+
+                <br>
+                <br>
+                <tr>
+                    <td><label for="nim">
+                            <font face="arial">NIM</font>
+                        </label></td>
+                    <td colspan="2"><input type="text" name="nim" id="nim" size="86" required title="Masukan NIM Anda">
+                    </td>
+                    <td>
+                        <select name="tahun_masuk" id="tahun_masuk">
+                            <option value="year">-- Year of University Entrace -- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td><label for="study">
+                            <font face="arial">Faculty, Department & Program</font>
+                        </label></td>
+                    <td>
+                        <select name="faculty" id="study">
+                            <option value="faculty">-- Faculty -- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="law">Law</option>
+                            <option value="economics">Economics</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="department" id="study">
+                            <option value="department">-- Department -- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+                            <option value="informatics">Informatics</option>
+                            <option value="industrial">Industrial Engineering</option>
+                            <option value="electrical">Electrical Engineering</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="program" id="study">
+                            <option value="program">-- Program -- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
+                            <option value="informatics">Informatics</option>
+                            <option value="information">Information System</option>
+                            <option value="industrial">Industrial Engineering</option>
+                            <option value="mechanical">Mechanical Engineering</option>
+                            <option value="mechatronics">Mechatronics Engineering</option>
+                            <option value="electrical">Electrical Engineering</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">
+                            <font face="arial">Gender</font>
+                        </label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="Male" title="Pilih Jenis Kelamin" required>
+                        <label for="male">
+                            <font face="arial">Male</font>
+                        </label>
+                        <input type="radio" name="gender" id="female" value="Female" title="Pilih Jenis Kelamin"
+                            required>
+                        <label for="female">
+                            <font face="arial">Female</font>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">
+                            <font face="arial">Email</font>
+                        </label></td>
+                    <td colspan="3"><input type="email" name="email" id="email" size="134" required
+                            title="Masukan Email Anda"></td>
+                </tr>
+                <tr>
+                    <td valign="top"><label for="address">
+                            <font face="arial">Address</font>
+                        </label></td>
+                    <td colspan="3"><textarea name="address" id="address" rows="4" cols="124" required
+                            title="Masukan Alamat Rumah"></textarea></td>
+                </tr>
+            </table>
+            <br><br><br><br>
+
+            <!-- tabel 2 -->
+            <br>
+            <table width="100%" cellpadding="5" cellspacing="0">
+                <tr bgcolor="aqua">
+                    <th align="left" colspan="3">
+                        <font face="arial">SUPPORT ACCOUNT</font>
+                    </th>
+                </tr>
+                <tr>
+                    <td width="25%">
+                        <font face="arial">Do you have scholarship support?</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="opsi1" id="no" value="no" required>
+                        <label for="no">
+                            <font face="arial">No</font>
+                        </label>
+                    </td>
+                </tr>
+                < <tr>
+                    <td width="25%"><input type="radio" name="opsi1" id="yes" value="no">
+                        <label for="yes">
+                            <font face="arial">Yes</font>
+                        </label>
+                    </td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nim" id="nim" size="134" required></td>
+                    </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td width="25%">
+                        <font face="arial">Do you have access to the trunojoyo email account?</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="opsi2" id="no" value="no">
+                        <label for="no">
+                            <font face="arial">No</font>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="opsi2" id="yes" value="yes" required>
+                        <label for="yes">
+                            <font face="arial">Yes</font>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Tabel 3 -->
+            <br>
+            <table width="100%" cellspacing="0" cellpadding="5">
+                <tr bgcolor="aqua">
+                    <th align="left" colspan="4">
+                        <font face="arial">EDUCATION</font>
+                    </th>
+                </tr>
+                <!-- KE-1 -->
+                <tr>
+                    <td width="25%" rowspan="2"><label for="primaryschol">
+                            <font face="arial">Primary School</font>
+                        </label></td>
+                    <td width="25%"><input type="text" name="primaryschol" id="primaryschol" size="40" required
+                            title="Masukan Nama Sekolah"></td>
+                    <td width="25%"><input type="text" name="primaryschol" id="primaryschol" size="40" required
+                            title="Masukan URL Sekolah"></td>
+                    <td width="25%">
+                        <select name="yearofgraduate" id="primaryschol">
+                            <option value="yearofgraduate">-- Year of Graduate -- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp;</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font face="arial" size="1">School Name</font>
+                    </td>
+                    <td>
+                        <font face="arial" size="1">Website URL</font>
+                    </td>
+                </tr>
+
+                <!-- KE-2 -->
+                <tr>
+                    <td width="25%" rowspan="2"><label for="middleschhol">
+                            <font face="arial">Middle School</font>
+                        </label></td>
+                    <td width="25%"><input type="text" name="middleschhol" id="middleschhol" size="40" required
+                            title="Masukan Nama Sekolah"></td>
+                    <td width="25%"><input type="text" name="middleschhol" id="middleschhol" size="40" required
+                            title="Masukan URL Sekolah"></td>
+                    <td width="25%">
+                        <select name="yearofgraduate" id="middleschhol">
+                            <option value="yearofgraduate">-- Year of Graduate -- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp;</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font face="arial" size="1">School Name</font>
+                    </td>
+                    <td>
+                        <font face="arial" size="1">Website URL</font>
+                    </td>
+                </tr>
+                <!-- KE-3 -->
+                <tr>
+                    <td width="25%" rowspan="2"><label for="highschool">
+                            <font face="arial">High School</font>
+                        </label></td>
+                    <td width="25%"><input type="text" name="highschool" id="highschool" size="40" required
+                            title="Masukan Nama Sekolah"></td>
+                    <td width="25%"><input type="text" name="highschool" id="highschool" size="40" required
+                            title="masukan url sekolah"></td>
+                    <td width="25%">
+                        <select name="yearofgraduate" id="highschool">
+                            <option value="yearofgraduate">-- Year of Graduate -- &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp; &nbsp;</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <font face="arial" size="1">School Name</font>
+                    </td>
+                    <td>
+                        <font face="arial" size="1">Website URL</font>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Tabel 4 -->
+            <br>
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+            <table align="center">
+                <td><input type="submit" value="Submit Form"></td>
+            </table>
+            <br>
+        </form>
+    </fieldset>
+</body>
+
+</html>

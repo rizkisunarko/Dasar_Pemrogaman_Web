@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <form action="submit.html" method="post">
+        <fieldset>
+            <legend>Data Registrasi</legend>
+            <table>
+                <!-- Username -->
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" name="username" id="username" size="20" maxlength="20" required></td>
+                </tr>
+                <!-- Password -->
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" id="password" size="20" required></td>
+                </tr>
+                <!-- Tanggal Lahir -->
+                <tr>
+                    <td><label for="birthdate">Tanggal Lahir:</label></td>
+                    <td><input type="date" name="birthdate" id="birthdate" required></td>
+                </tr>
+                <!-- Telepon -->
+                <tr>
+                    <td><label for="telephone">Telepon:</label></td>
+                    <td>
+                        <input type="tel" name="telephone" id="telephone" placeholder="xxx-xxxxxxx"
+                               pattern="[0-9]{3}-[0-9]{7}" required>
+                    </td>
+                </tr>
+                <!-- Jenis Kelamin -->
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Perempuan</label>
+                    </td>
+                </tr>
+                <!-- Checkbox -->
+                <tr>
+                    <td colspan="2">
+                        <label for="binary">Bersedia menerima iklan melalui email?</label>
+                        <input type="checkbox" name="binary" id="binary" checked>
+                    </td>
+                </tr>
+                <!-- Tombol Submit dan Reset -->
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+      
+</body>
+</html>

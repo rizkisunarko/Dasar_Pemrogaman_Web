@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-181_Rizki Pratama Sunarko_Modul05</title>
+    <style>
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Order Barang</h3>
+    <table id="tabel">
+        <tr>
+            <th>Nama Barang</th> 
+            <th>Harga</th>
+            <th>Jumlah</th>
+            <th>Subtotal</th>
+            <th>Aksi</th>
+        </tr>
+    </table>
+
+    <button onclick="tambahBaris()">Tambah barang</button>
+    <hr>
+    <p><b>Total Harga: <span id="total">0</span></b></p>
+
+    <script>
+        function tambahBaris() {
+            var tabel = document.getElementById('tabel');
+            var baris = tabel.insertRow(1);
+
+            // Kolom nama barang
+            var nama = baris.insertCell(0);
+            nama.innerHTML = '<input type="text" placeholder="Nama Barang">';
+
+            // Kolom harga
+            var harga = baris.insertCell(1);
+            harga.innerHTML = '<input type="number" value="0" min="0" oninput="hitung(this)">';
+
+            // Kolom jumlah
+            var jumlah = baris.insertCell(2);
+            jumlah.innerHTML = '<input type="number" value="0" min="1" oninput="hitung(this)">';
+
+            // Kolom subtotal (readonly)
+            var subtotal = baris.insertCell(3);
+            subtotal.innerHTML = '<input type="number" value="0" readonly>';
+
+            // Kolom aksi (hapus)
+            var aksi = baris.insertCell(4);
+            aksi.innerHTML = '<button onclick="hapusBaris(this)">Hapus</button>';
+        }
+
+        function hitung(input) {
+            var baris = input.parentNode.parentNode;
+            var harga = baris.cells[1].children[0].value;
+            var jumlah = baris.cells[2].children[0].value;
+            var subtotal = baris.cells[3].children[0];
+            subtotal.value = harga * jumlah;
+            totalHarga();
+        }
+
+        function totalHarga() {
+            var tabel = document.getElementById('tabel');
+            var total = 0;
+            for (var i = 1; i < tabel.rows.length; i++) {
+                var sub = tabel.rows[i].cells[3].children[0].value;
+                total += parseInt(sub) || 0;
+            }
+            document.getElementById('total').textContent = total;
+        }
+
+        function hapusBaris(btn) {
+            var row = btn.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+            totalHarga();
+        }
+    </script>
+
+</body>
+
+</html>
